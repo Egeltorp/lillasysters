@@ -9,19 +9,6 @@
       width: 100%;
       max-width: 400px;
       height: auto; 
-
-      opacity: 0;
-      animation: fade-in 2s ease-in-out;
-      animation-fill-mode: forwards;
-      }
-
-      @keyframes fade-in {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
       }
     
       body {
@@ -37,12 +24,29 @@
         min-height: 800px;
       }
 
+      .divider {
+        width: 100%;
+        height: 1px;
+        border: none;
+        background-color: #ccc;
+        margin: 10px 0;
+      }
+
+      .divider-silent {
+        width: 100%;
+        height: 1px;
+        border: none;
+        background-color: white;
+        margin: 10px 0;
+      }
+
       .box2 {
           width: 50%;
           height: 500px;
           margin: auto;
           text-align: center;
           padding: 20px;
+          padding-top: 30px;
 
           font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
@@ -50,6 +54,8 @@
       .box2 ul {
         list-style: none;
         padding-left: 0;
+
+        border: 5px dotted #2342b0;
       }
       
       .box2 li {
@@ -84,7 +90,7 @@
         padding-top: 5px;
         padding-left: 40px;
         padding-right: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
       }
       
       nav ul {
@@ -108,8 +114,6 @@
       
       nav a:hover {
         color: #2342b0;
-        text-decoration: underline;
-        text-underline-offset: 7px;
         cursor: pointer;
       }
 
