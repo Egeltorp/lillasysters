@@ -1,4 +1,17 @@
 
+    * {
+        border: 0px solid red;
+        box-sizing: border-box;
+    }
+
+    .logo-png {
+      padding: 10px; 
+      width: 30%;
+      height: 30%; 
+      
+
+    }
+    
     body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -20,6 +33,10 @@
         background-color: white;
         display: flex;
         justify-content: space-around;
+        padding-top: 5px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
       }
       
       nav ul {
@@ -31,11 +48,11 @@
       nav li {
         display: inline-block;
         padding-right: 60px;
-        padding-bottom: 10px;
+        padding-left: 60px;
       }
 
       nav a {
-        font: 18px/1.5rem 'Lato Regular',Helvetica,Arial,sans-serif;
+        font: 18px/1.5rem 'Roboto', Helvetica, Arial, sans-serif;
         color: #2342b0;
         text-decoration: none;
       }
