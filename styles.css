@@ -41,11 +41,11 @@
       }
 
       .best-box {
-        width: 50%;
+        width: 75%;
         height: auto;
         margin: auto;
         text-align: center;
-        border: 3px dotted #2342b0;
+        border: 8px dotted #2342b0;
         padding: 10px;
 
         margin-top: 30px;
