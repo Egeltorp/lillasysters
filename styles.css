@@ -6,8 +6,10 @@
 
      .logo-png {
       padding: 10px; 
-      width: 30%;
-      height: 30%; 
+      width: 100%;
+      max-width: 400px;
+      height: auto; 
+
       }
     
       body {
@@ -20,6 +22,28 @@
         padding-top: 5px;
         width: 100%;
         height: 100%;
+      }
+
+      .box2 {
+          width: 50%;
+          height: 500px;
+          margin: auto;
+          text-align: center;
+          padding: 20px;
+      }
+
+      .box2 ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      
+      .box2 li {
+        padding-left: 20px;
+        position: relative;
+      }
+      
+      .box2 li {
+        padding: 18px;
       }
 
       .frontpage-image {
@@ -58,6 +82,7 @@
         display: inline-block;
         padding-right: 60px;
         padding-left: 60px;
+        padding-bottom: 10px;
       }
 
       nav a {
