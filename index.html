@@ -10,6 +10,54 @@
         <meta name="description" content="Lillasysters Catering">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles.css">
+
+        <style>
+            body, html {
+                height: 100%;
+            }
+
+            /* The hero image */
+            .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+            background-color: white;
+            /* Set a specific height */
+            height: 30%;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 40px;
+            }
+
+            /* Place text in the middle of the image */
+            .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            }
+
+            .fcc-btn {
+                padding: 15px 25px;
+                text-decoration: none;
+
+                background-color: #ffffff;
+                color:#2342b0;
+                border: 2px solid #2342b0;
+            }
+
+            .fcc-btn:hover {
+                background-color: #2342b0;
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <div>
@@ -34,6 +82,18 @@
           </nav>
         </div>
 
+        <hr class="divider">
+
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>Vi är Lillasysters Catering</h1>
+              <p style="color: #2342b0">Navigera hemsidan via menyn ovan.</p>
+              <br>
+              <br>
+              <a class="fcc-btn" href="./kontaktinfo.html";">Kontakta oss!</a>
+            </div>
+        </div>
+
         <!--   
             <div class="box">
             <img class="frontpage-image" src="./images/frontpage.JPG" alt="Exempelbild">
@@ -45,7 +105,7 @@
         
 
         <div class="container">
-            <img src="./images/frontpage.JPG" alt="Exempelbild" style="width:100%;">
+            <img src="./images/frontpage.JPG" alt="Exempelbild" style="width:100%; margin-top: 20px;">
                 <div class="centered" style="overflow: hidden;">
                     <!-- HÄR KAN DET VARA TEXT -->
                 </div>
