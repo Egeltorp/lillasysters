@@ -144,11 +144,14 @@
         font: 18px/1.5rem 'Roboto', Helvetica, Arial, sans-serif;
         color: #2342b0;
         text-decoration: none;
+        text-align: center;
       }
       
       nav a:hover {
         color: #2342b0;
         cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 7px;
       }
 
       main {
