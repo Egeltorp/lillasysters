@@ -41,16 +41,30 @@
       }
 
       .best-box {
-        width: 75%;
+        width: 90%;
         height: auto;
         margin: auto;
         text-align: center;
         border: 8px dotted #2342b0;
         padding: 10px;
+        overflow: scroll;
 
         margin-top: 30px;
         margin-bottom: 30px;
       }
+
+      .parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }  
+      
+      @media (max-width: 700px) {
+        .parent {
+          flex-direction: column;
+        }
+      }    
 
       .box2 {
           width: 50%;
