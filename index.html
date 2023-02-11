@@ -29,9 +29,21 @@
             background-size: cover;
             position: relative;
 
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top: 15px;
+            margin-bottom: 15px;
             padding: 40px;
+
+            overflow: visible;
+            box-sizing: content-box;
+            }
+
+            @media (min-width:768px) {
+                .hero-image {
+                    height: 15%;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding: 40px;
+                }
             }
 
             /* Place text in the middle of the image */
@@ -42,6 +54,9 @@
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
+
+            clear: both;
+            float: none;
             }
 
             .fcc-btn {
@@ -51,6 +66,9 @@
                 background-color: #ffffff;
                 color:#2342b0;
                 border: 2px solid #2342b0;
+
+                clear: both;
+                float: none;
             }
 
             .fcc-btn:hover {
@@ -94,16 +112,6 @@
             </div>
         </div>
 
-        <!--   
-            <div class="box">
-            <img class="frontpage-image" src="./images/frontpage.JPG" alt="Exempelbild">
-            <div>
-                Your Text
-            </div>
-        </div>
-         -->
-        
-
         <div class="container">
             <img src="./images/frontpage.JPG" alt="Exempelbild" style="width:100%; margin-top: 20px;">
                 <div class="centered" style="overflow: hidden;">
@@ -113,7 +121,7 @@
           </div>
 
         <!-- footer med copyright och länkar till legal shit-->
-        <footer>
+        <footer style="margin-top: 10px;">
             <div style="border: 1px solid #2342b0;">
                 <p>Telefon: <a style="color: white;" href=tel:"0705459161">070-545 91 61</a></p>
                 <p>E-post: <a style="color: white;" href=mailto:"lillasysters.catering@gmail.com">lillasysters.catering@gmail.com</a></p>
