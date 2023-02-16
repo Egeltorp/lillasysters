@@ -54,7 +54,8 @@
         height: auto;
         margin: auto;
         text-align: center;
-        border: 8px dotted #2342b0;
+        border: 2px solid #2342b0;
+        border-radius: 20px;
         padding: 10px;
         overflow: scroll;
 
