@@ -69,12 +69,19 @@
             }
 
             .master-div {
-                width: 40%;
+                width: 100%;
                 height: auto;
                 margin: auto;
                 padding: 10px;
                 overflow: visible;
                 min-width: 300px;
+                margin-bottom: 20px;
+            }
+
+            @media (min-width: 1100px) {
+                .master-div {
+                    width: 40%;
+                }
             }
 
             .master-div h3 {
@@ -103,6 +110,18 @@
             div table {
                 width: 100%;
             }
+
+            table td {
+                padding: 5px;
+                padding-bottom: 12px;
+                padding-top: 12px;
+                text-align: left;
+            }
+
+            table {
+                border-spacing: 0px;
+                border-collapse: collapse;
+            }
         </style>
 
         <script>
@@ -125,6 +144,7 @@
                 // Show the current tab, and add an "active" class to the button that opened the tab
                 document.getElementById(cityName).style.display = "block";
                 evt.currentTarget.className += " active";
+                window.scrollTo(0, 0);
                 }
         </script>
     </head>
@@ -182,11 +202,12 @@
                             <tr></tr>
                         </tbody>
                     </table>
+                    <br>
 
                     <h4>Matiga dubbla smörgåsar</h4>
                         <table style="width: 100%; border-spacing: 5px;">
                             <tbody>
-                            <tr><td></td><td><b>Liten</b></td><td><b>Stor</b></td></tr>
+                            <tr><th></th><th><b>Liten</b></th><th><b>Stor</b></th></th>
 
                             <tr>
                             <td>Ost &amp; grönsaker</td>
@@ -270,6 +291,7 @@
                             </tr>
                             </tbody>
                         </table>
+                    <br>
 
                     <h4><strong>Specialare</strong></h4>
                         <table style="width: 100%">
@@ -286,6 +308,7 @@
                                 <td>65:-</td>
                             </tr>
                         </table>
+                    <br>
                     
                     <h4><strong>Landgångar</strong></h4>
                         <p><strong>Landgång, 98:-</strong><br /> Skagenröra, rostbiff, skinka, salami, kalkon, ost, brieost och grönsaker </p>
@@ -311,7 +334,7 @@
                     <h4>Klassikern &ensp; &nbsp;80:-</h4>
                     <p>Skagenröra, skinkröra och färskost.<br /> Garnerad med stora räkor, skinka och grönsaker</p>
                 </div>            
-                <p style="text-align: center;"><em><br /> Ni kan också göra er egen kombination av våra röror!</em></p>
+                <p style="text-align: center;"><em><br/> Ni kan också göra er egen kombination av våra röror!</em></p>
             </div>
             
             <div id="3" class="tabcontent">
@@ -379,7 +402,7 @@
                                     <td>36:-</td>
                                 </tr>
                                 <tr>
-                                    <td>Cgeesecake med färsk frukt</td>
+                                    <td>Cheesecake med färsk frukt</td>
                                     <td>39:-</td>
                                 </tr>
                                 <tr>
@@ -466,7 +489,6 @@
                     <h4>Fyran 139:-/ per portion</h4>
                     <p>- Grillad kycklingfilé i ört &amp; honungsmarinad <br /> - Bulgursallad <br /> - Limeyoghurtsås<br /> - Fransk tomatsallad <br /> - Smör &amp; bröd </p>
                     <h4>Vegetarisk buffé 195:-/ per person</h4>
-                    <h4> </h4>
                     <p>- Chevrefyllda smördegsknyten<br /> - Västerbottenostpaj<br /> - Bönsallad med selleri och chili<br /> - Marinerade råa grönsaker<br /> - Olika sorters marinerade oliver och soltorkade tomater<br /> - Bulgursallad<br /> - Ört &amp; löksås<br /> - Bröd och smör</p>
                     <div> </div>
                     <h4>Medelhavsbuffé 209:-/ per person</h4>
@@ -548,9 +570,7 @@
                     - Princesstårta, jordgubbstårta, hallontårta, mandeltårta<br>
                     - Frukt eller bärpaj med vaniljsås&nbsp;</p>
                     <p id="elm32"><strong>Buffé, dryck, kaffe &amp; kondisbit eller tårta från 295:- till 400</strong><strong>:-</strong></p>
-                    <p id="elm34">Tex. Svensk buffé med kondisbit 369kr&nbsp; och 379kr med tårta&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Italiensk buffé 379kr med kondisbit och 389kr med tårta&nbsp;</p>
-                    <p id="elm49">» <a title="" href="/buffeer.html" target="_self">Se våra bufféer</a></p>
-                    </div>
+                    <p id="elm34">Tex. Svensk buffé med kondisbit 369kr&nbsp; och 379kr med tårta&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Italiensk buffé 379kr med kondisbit och 389kr med tårta&nbsp;</p></div>
             </div>
 
             <div id="7" class="tabcontent">
@@ -593,20 +613,58 @@
 
             <div id="8" class="tabcontent">
                 <h3>Drycker</h3>
-                <div class="grid-66 tablet-grid-66" id="elm19">
-                    <div class="contentBox opBox" id="elm17" drag="false">
-                    <h4 >Kalla</h4>
-                    <p id="elm20">Burkar 0,33 l läsk, mineralvatten, lättöl&nbsp;&nbsp; 16:-&nbsp;<br>
-                    Petflaskor 0,5 l läsk, mineralvatten&nbsp; 22:-&nbsp;<br>
-                    Juicetetra 0,2 l apelsin, äpple, blandfrukt&nbsp; 14:-&nbsp;<br>
-                    Fruktsmoothie 1 l&nbsp; 70:-&nbsp;</p>
-                    <h4 id="elm23">Varma, inklusive socker, mjölk &amp;&nbsp;engångsmaterial</h4>
-                    <p id="elm24">Kaffe/te&nbsp; 22:-&nbsp;<br>
-                    Choklad&nbsp; 22:-&nbsp;<br>
-                    Glögg&nbsp; 20:-&nbsp;<br>
-                    Kryddad äppeljuice&nbsp; 18:-&nbsp;</p>
-                    </div>
-                    </div>
+                <div>
+                    <h4>Kalla drycker</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Burkar 0,33 L</td>
+                                <td>Läsk, mineralvatten, lättöl</td>
+                                <td>16:-</td>
+                            </tr>
+                            <tr>
+                                <td>Petflaskor 0,5 L</td>
+                                <td>Läsk, mineralvatten</td>
+                                <td>22:-</td>
+                            </tr>
+                            <tr>
+                                <td>Juicetetra 0,2 L</td>
+                                <td>Apelsin, äpple, blandfrukt</td>
+                                <td>14:-</td>
+                            </tr>
+                            <tr>
+                                <td>Fruktsmoothie 1 L</td>
+                                <td></td>
+                                <td>70:-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <h4>Varma drycker</h4>
+                    <p><i>Inklusive socker, mjölk &amp; engångsmaterial.</i></p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Kaffe/te</td>
+                                <td>22:-</td>
+                            </tr>
+                            <tr>
+                                <td>Choklad</td>
+                                <td>22:-</td>
+                            </tr>
+                            <tr>
+                                <td>Glögg</td>
+                                <td>20:-</td>
+                            </tr>
+                            <tr>
+                                <td>Kryddad äppeljuice</td>
+                                <td>18:-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <div id="9" class="tabcontent">
