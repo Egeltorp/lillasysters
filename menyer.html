@@ -35,9 +35,11 @@
             .tab button {
             background-color: inherit;
             float: left;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
             border-bottom: 3px solid white;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            border-radius: 5px;
             outline: none;
             cursor: pointer;
             padding: 10px 12px;
@@ -67,7 +69,7 @@
             }
 
             .master-div {
-                width: 50%;
+                width: 40%;
                 height: auto;
                 margin: auto;
                 padding: 10px;
@@ -82,10 +84,20 @@
             }
 
             .master-div h4 {
-                text-align: center;
+                text-align: left;
                 color: #2342b0;
                 border-bottom: 2px solid #2342b0;
                 font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            div p {
+                margin-top: 5px;
+            }
+
+            tr:hover {
+                background-color: #2342b0;
+                color: white;
             }
         </style>
 
@@ -157,107 +169,145 @@
                 <h3>Smörgåsar</h3>
                 <div>
                     <h4>Småfranska</h4>
-                    <p>Ost, paprika, sallad&nbsp; 26:-&nbsp;<br>
-                    Ost, rökt skinka, sallad, gurka&nbsp; 26:-&nbsp;<br>
-                    Färskost naturell &amp; grönsaker&nbsp; 26:-&nbsp;<br>
-                    Leverpastej &amp; gurka&nbsp; 26:-&nbsp;</p>
-                    <h4 >Matiga dubbla smörgåsar (Liten/Stor)</h4>
-                    <table><tbody><tr><td>Ost &amp; grönsaker&nbsp;</td>
-                    <td>26:-</td>
-                    <td>47:-</td>
-                    </tr><tr><td>Ost, skinka, &amp; grönsaker</td>
-                    <td>26:-</td>
-                    <td>47:-</td>
-                    </tr><tr><td>Ost &amp; salami</td>
-                    <td>26:-</td>
-                    <td>47:-</td>
-                    </tr><tr><td>Köttbullar, rödbetssallad</td>
-                    <td>26:-</td>
-                    <td>47:-</td>
-                    </tr><tr><td><br></td>
-                    <td><br></td>
-                    <td><br></td>
-                    </tr><tr><td><br></td>
-                    <td><br></td>
-                    <td><br></td>
-                    </tr><tr><td><br></td>
-                    <td><br></td>
-                    <td><br></td>
-                    </tr><tr><td>Mozzarellaost, tomat, basilika</td>
-                    <td>30:-</td>
-                    <td>49:-</td>
-                    </tr><tr><td>Brieost, paprika</td>
-                    <td>30:-</td>
-                    <td>49:-</td>
-                    </tr><tr><td>Fetaost, tomat, oliver, rödlök</td>
-                    <td>30:-</td>
-                    <td>49:-</td>
-                    </tr><tr><td>Färskost, grönsaker, ruccola</td>
-                    <td>30:-</td>
-                    <td>49:-</td>
-                    </tr><tr><td>Salami, brieost</td>
-                    <td>34:-</td>
-                    <td>55:-</td>
-                    </tr><tr><td>Kalkon, färskost, tomat, ruccola</td>
-                    <td>34:-</td>
-                    <td>55:-</td>
-                    </tr><tr><td>Rostbiff, currypicklesröra, gurka</td>
-                    <td>34:-</td>
-                    <td>55:-</td>
-                    </tr><tr><td>Italiensk kyckling/grönsaksröra</td>
-                    <td>34:-</td>
-                    <td>55:-</td>
-                    </tr><tr><td>Tonfiskröra</td>
-                    <td>34:-</td>
-                    <td>55:-</td>
-                    </tr><tr><td>Skagenröra</td>
-                    <td>34:-</td>
-                    <td>55:-</td>
-                    </tr><tr><td>Kallrökt lax, färskost naturell &amp; skivad rödlök</td>
-                    <td>37:-</td>
-                    <td>59:-</td>
-                    </tr><tr><td>Lufttorkad skinka, mozzarella, soltorkade tomater, basilika</td>
-                    <td>37:-</td>
-                    <td>59:-</td>
-                    </tr></tbody></table><p id="elm26">&nbsp;</p>
+                    <table style="width: 100%">
+                        <tbody>
+                            <tr><td>Ost, paprika, sallad</td><td>26:-</td></tr>
+                            <tr><td>Ost, rökt skinka, sallad, gurka</td><td>26:-</td></tr>
+                            <tr><td>Färskost naturell &amp; grönsaker 26:-</td><td>26:-</td></tr>
+                            <tr><td>Leverpastej &amp; gurka</td><td>26:-</td></tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+
+                    <h4>Matiga dubbla smörgåsar</h4>
+                        <table style="width: 100%; border-spacing: 5px;">
+                            <tbody>
+                            <tr><td></td><td><b>Liten</b></td><td><b>Stor</b></td></tr>
+
+                            <tr>
+                            <td>Ost &amp; grönsaker</td>
+                            <td>26:-</td>
+                            <td>47:-</td>
+                            </tr>
+                            <tr>
+                            <td>Ost, skinka, &amp; grönsaker</td>
+                            <td>26:-</td>
+                            <td>47:-</td>
+                            </tr>
+                            <tr>
+                            <td>Ost &amp; salami</td>
+                            <td>26:-</td>
+                            <td>47:-</td>
+                            </tr>
+                            <tr>
+                            <td>Köttbullar, rödbetssallad</td>
+                            <td>26:-</td>
+                            <td>47:-</td>
+                            </tr>
+                            <tr>
+                            <td>Mozzarellaost, tomat, basilika</td>
+                            <td>30:-</td>
+                            <td>49:-</td>
+                            </tr>
+                            <tr>
+                            <td>Brieost, paprika</td>
+                            <td>30:-</td>
+                            <td>49:-</td>
+                            </tr>
+                            <tr>
+                            <td>Fetaost, tomat, oliver, rödlök</td>
+                            <td>30:-</td>
+                            <td>49:-</td>
+                            </tr>
+                            <tr>
+                            <td>Färskost, grönsaker, ruccola</td>
+                            <td>30:-</td>
+                            <td>49:-</td>
+                            </tr>
+                            <tr>
+                            <td>Salami, brieost</td>
+                            <td>34:-</td>
+                            <td>55:-</td>
+                            </tr>
+                            <tr>
+                            <td>Kalkon, färskost, tomat, ruccola</td>
+                            <td>34:-</td>
+                            <td>55:-</td>
+                            </tr>
+                            <tr>
+                            <td>Rostbiff, currypicklesröra, gurka</td>
+                            <td>34:-</td>
+                            <td>55:-</td>
+                            </tr>
+                            <tr>
+                            <td>Italiensk kyckling/grönsaksröra</td>
+                            <td>34:-</td>
+                            <td>55:-</td>
+                            </tr>
+                            <tr>
+                            <td>Tonfiskröra</td>
+                            <td>34:-</td>
+                            <td>55:-</td>
+                            </tr>
+                            <tr>
+                            <td>Skagenröra</td>
+                            <td>34:-</td>
+                            <td>55:-</td>
+                            </tr>
+                            <tr>
+                            <td>Kallrökt lax, färskost naturell &amp; skivad rödlök</td>
+                            <td>37:-</td>
+                            <td>59:-</td>
+                            </tr>
+                            <tr>
+                            <td>Lufttorkad skinka, mozzarella, soltorkade tomater, basilika</td>
+                            <td>37:-</td>
+                            <td>59:-</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
                     <h4><strong>Specialare</strong></h4>
-                    <p ><strong>Räksmörgås</strong> med ägg &amp; majonnäs, vitt bröd/kavring&nbsp; 99:-</p>
-                    <p id="elm14"><strong>Rostbiff</strong> med potatissallad &amp; grönsaker på rågsiktsbröd&nbsp; 89:-&nbsp;</p>
-                    <h4 id="elm29"><strong>Landgångar</strong></h4>
-                    <p id="elm33"><strong>Landgång 98:-</strong>&nbsp;<br>
-                    Skagenröra, rostbiff, skinka, salami, kalkon, ost, brieost och grönsaker&nbsp;</p>
-                    <p id="elm30"><strong>Italiensk landgång 99:-</strong><br>
-                    Lufttorkad skinka, mozzarellaost,&nbsp; 2 sorters salami,<br>
-                    marinerade grönsaker mm.&nbsp;</p>
-                    <p id="elm32"><strong>Jullandgång ( bara i december ) 105:-</strong><br>
-                    Sill &amp; potatis, kaviarägg, köttbullar, rödbetssallad, julskinka, pastej, inlagd gurka, kallrökt lax, rökt korv, ost&nbsp;</p>
-                    <p id="elm13">Julsmörgås, rågsikt med julskinka, rödbetssallad &amp; köttbullar&nbsp; &nbsp; 65:-</p>
-                    </div>
+                        <table style="width: 100%">
+                            <tr>
+                                <td><strong>Räksmörgås</strong> med ägg &amp; majonnäs, vitt bröd/kavring</td>
+                                <td>99:-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rostbiff</strong> med potatissallad &amp; grönsaker på rågsiktsbröd</td>
+                                <td>89:-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Julsmörgås,</strong> julskinka &amp; rödbetssallad på rågsiktsbröd</td>
+                                <td>65:-</td>
+                            </tr>
+                        </table>
+                    
+                    <h4><strong>Landgångar</strong></h4>
+                        <p><strong>Landgång, 98:-</strong><br /> Skagenröra, rostbiff, skinka, salami, kalkon, ost, brieost och grönsaker </p>
+                        <p><strong>Italiensk landgång, 99:-</strong><br /> Lufttorkad skinka, mozzarellaost, 2 sorters salami,<br /> marinerade grönsaker mm. </p>
+                        <p><strong>Jullandgång (bara i december), 105:-</strong><br /> Sill &amp; potatis, kaviarägg, köttbullar, rödbetssallad, julskinka, pastej, inlagd gurka, kallrökt lax, rökt korv, ost </p>
+                </div>            
             </div>
             
             <div id="2" class="tabcontent">
                 <h3>Smörgåstårtor</h3>
-                <h4>Pris per portion</h2>
-                <div class="contentBox opBox" id="elm17" drag="false">
-                    <h4 id="elm40">Havets pålägg 85:-</h4>
-                    <p id="elm23">Röra på varmrökt lax, skagenröra och ett lager färskost.<br>
-                    Garnerad med stora räkor, kallrökt lax&nbsp;och grönsaker</p>
-                    <h4 id="elm24">Vegetarisk 76:-</h4>
-                    <p >Färskost och grönsaksröra. Garnerad med ost och grönsaker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                    <h4 id="elm26">Kött 80:-</h4>
-                    <p >Skinkröra, rostbiffröra med curry och ett lager färskost naturell. Garnerad med ost, skinka och grönsaker&nbsp;</p>
-                    <h4 >Italiensk 85:-</h4>
-                    <p id="elm29">Fylld med en röra på lufttorkad skinka, soltorkade tomater, grönsaker. Garnerad med mozzarellaost, tomater, basilika, grönsaker, salami osv.</p>
-                    <p id="elm13">Kalkon 80:-<br>
-                    Fylld med kalkon/chiliröra, grönsaksröra och färskost.<br>
-                    Garnerad med kalkon, ost och grönsaker</p>
-                    <h4 id="elm38">Klassikern 80:-</h4>
-                    <p id="elm39">Skagenröra, skinkröra och färskost.<br>
-                    Garnerad med stora räkor, skinka och grönsaker</p>
-                    <p><em><br>
-                    Ni kan också göra er egen kombination av våra röror!</em></p>
-                    </div>
-            </div>
+                <p style="text-align: center;">Alla</p>
+                <div>
+                    <h4>Havets pålägg &ensp; &nbsp;85:-</h4>
+                    <p>Röra på varmrökt lax, skagenröra och ett lager färskost.<br /> Garnerad med stora räkor, kallrökt lax och grönsaker</p>
+                    <h4>Vegetarisk &ensp; &nbsp;76:-</h4>
+                    <p>Färskost och grönsaksröra. Garnerad med ost och grönsaker</p>
+                    <h4>Kött &ensp; &nbsp;80:-</h4>
+                    <p>Skinkröra, rostbiffröra med curry och ett lager färskost naturell. Garnerad med ost, skinka och grönsaker.</p>
+                    <h4>Italiensk &ensp; &nbsp;85:-</h4>
+                    <p>Fylld med en röra på lufttorkad skinka, soltorkade tomater, grönsaker. Garnerad med mozzarellaost, tomater, basilika, grönsaker, salami osv.</p>
+                    <h4>Kalkon &ensp; &nbsp;80:-<br /></h4>
+                    <p>Fylld med kalkon/chiliröra, grönsaksröra och färskost.<br /> Garnerad med kalkon, ost och grönsaker</p>
+                    <h4>Klassikern &ensp; &nbsp;80:-</h4>
+                    <p>Skagenröra, skinkröra och färskost.<br /> Garnerad med stora räkor, skinka och grönsaker</p>
+                    <p><em><br /> Ni kan också göra er egen kombination av våra röror!</em></p>
+                    </div>            </div>
             
             <div id="3" class="tabcontent">
                 <h3>Kaffebröd & Dessert</h3>
